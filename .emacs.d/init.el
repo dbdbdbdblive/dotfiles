@@ -18,7 +18,10 @@
 (require 'compile)
 (ido-mode t)
 (menu-bar-mode -1)
-(normal-erase-is-backspace-mode 1)
+;;DB: in crouton, normal-erase-is-backspace-mode needs to be 0, not 1, for
+;;backspace to actually delete to the left
+;;(normal-erase-is-backspace-mode 1)
+(normal-erase-is-backspace-mode 0)
 (put 'downcase-region 'disabled nil)
 (put 'upcase-region 'disabled nil)
 (setq column-number-mode t)
