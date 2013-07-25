@@ -20,6 +20,7 @@
 (menu-bar-mode -1)
 ;;DB: in crouton, normal-erase-is-backspace-mode needs to be 0, not 1, for
 ;;backspace to actually delete to the left
+;;see http://www.gnu.org/software/emacs/manual/html_node/emacs/DEL-Does-Not-Delete.html
 ;;(normal-erase-is-backspace-mode 1)
 (normal-erase-is-backspace-mode 0)
 (put 'downcase-region 'disabled nil)
